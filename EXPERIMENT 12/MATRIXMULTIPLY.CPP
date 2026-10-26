@@ -27,7 +27,7 @@ int main() {
             int j = i + len - 1;
             dp[i][j] = INT_MAX;
 
-            // Try every possible split point
+            //split point
             for (int k = i; k < j; k++) {
                 int cost = dp[i][k] + dp[k + 1][j]
                          + p[i - 1] * p[k] * p[j];
